@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Cube Cobra Set Shorthand Add
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  Type "EOE 331", hit Enter to resolve to "Chorale of the Void [EOE-331]", hit Enter again to add
 // @author       You
 // @match        https://cubecobra.com/*
@@ -14,7 +14,7 @@
 
   const SHORTHAND_RE = /^([A-Za-z0-9]{2,6})\s+(\d+[A-Za-z]?)$/;
   const FORMATTED_RE = /\[([A-Za-z0-9]{2,6})-(\d+[A-Za-z]?)\]/;
-  const SPLIT_LAYOUTS = new Set(['split', 'aftermath', 'adventure', 'prepare']);
+  const SPLIT_LAYOUTS = new Set(['split', 'aftermath']);
 
   let activeRequest = null;
 
